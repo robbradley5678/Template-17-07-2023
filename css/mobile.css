@@ -1,0 +1,244 @@
+/* ======================================================= MOBILE NAV */
+#hamburger {
+    display: none;
+    font-size: 3rem;
+    color: var(--accent-color-1);
+    z-index: 2;
+    animation-duration: 1s;
+    /* Animation names added in "mobile-header.js" */
+  }
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+    to {transform: rotate(180deg);}
+  }
+
+@keyframes rotate-reverse {
+    from {transform: rotate(0)};
+    to {transform: rotate(-180deg)};
+}
+
+#mobile-nav {
+   display: none;
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: var(--accent-color-1);
+   opacity: 0.95;
+   z-index: 1;
+   animation-name: slide-in;
+   animation-duration: 0.5s;
+}
+
+@keyframes slide-in {
+    from {
+      margin-left: 200%;
+      width: 0%;
+   }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+ }
+
+ @keyframes slide-out {
+    from {
+        margin-left: 0%;
+        width: 100%;
+    }
+    to {
+        margin-left:200%;
+        width: 0%;
+    }
+ }
+  
+#mobile-nav ul {
+    padding: 15%;
+    text-align: left;
+}
+
+#mobile-nav  ul li {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding:  10px 0;
+    font-size: 2.5rem;
+}
+
+#mobile-nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mobile-nav-dropdown {
+
+}
+
+.mobile-nav-dropdown-content {
+    padding: 0 !important;
+    display: block;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.mobile-dropdown-item {
+    margin-left: 40px;
+
+}
+
+.mobile-dropdown-item:active {
+    font-weight: bold;
+}
+
+.mobile-nav-dropdown:focus-within .mobile-nav-dropdown-content {
+    opacity: 1;
+    display: block;
+    pointer-events: auto;
+}
+
+
+/* ======================================================= MEDIA QUERIES */
+@media(max-width: 1200px) {
+    /* ============= WHOLE PAGE STYLES */
+    section, footer {
+        padding: 100px 10%;
+    }
+
+    
+    header, .hero-text {
+        padding: 0 10%;
+    }
+
+    /* ======================== FOOTER */
+    footer {
+        padding-bottom: 0;
+    }
+} 
+
+@media (max-width: 940px) {
+    /* =========================== NAV */
+    .desktop-nav {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    /* ========================= INTRO */
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+  
+    .flex-item-left, .flex-item-right {
+        width: 100%;
+    }
+  
+    .gallery-col {
+        width: 100%;
+    }
+
+    .mobile-full-width {
+       display: block;
+    }
+
+    .hide-on-mobile {
+       display: none;
+    }
+
+    /* =============== WHY CHOOSE US */
+    .why-choose-us-item {
+        display: block;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 75px;
+    }
+
+    .why-choose-us-item p {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    /* ====================== REVIEWS */
+    .review-text {
+        padding: 0 10%;
+    }
+
+    /* ================= LATEST WORK */
+    .latest-work-img-grid {
+        text-align: center;
+        padding-bottom: 50px;
+     }
+}
+
+@media (max-width: 800px) {
+   .why-choose-us-container {
+    flex-direction: column;
+   }
+
+   .icon {
+    font-size: 8rem;
+    color: var(--very-light-grey);
+}
+
+.why-choose-us-item p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer-col-container {
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 100%;
+}
+}
+
+@media (max-width: 650px) {
+    /* ========== WHOLE PAGE STYLES */
+    h2 {
+        font-size: 12vw;
+    }
+    
+    /* ======================= HERO */
+    .hero-text h1 {
+        font-size: 13vw;
+    }
+
+    .hero-button-container {
+        text-align: center;
+    }
+
+    /* ==================== BUTTONS */
+    button {
+        width: 100%;
+    }
+    .hero-button-1, .hero-button-2 {
+        margin: 0 0 30px 0;
+    }
+
+    /* ==================== SERVICES */
+    .services-item {
+        width: 100%;
+    }
+}  
+
+@media (max-width: 450px) {
+    section, footer {
+        padding: 100px 5%;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+    header, .hero-text {
+        padding: 0 5%;
+    }
+} 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Domine:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/df27d71215.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <script type="text/javascript" src="./js/header.js"></script>
+    </header>
+
+    <main>
+ <!-- HERO -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Descriptive slogan</h1>
+                <h2>Sub heading with a bit more information</h2>
+                <div class="hero-button-container">
+                    <a href="contact.html"><button class="hero-button-1">Get a quote</button></a>
+                    <a href="#intro"><button class="hero-button-2">Learn more</button></a>
+                </div>
+            </div>
+        </section>
+
+<!--INTRO -->
+        <section class="intro" id="intro">
+            <div class="flex-container">
+                <div class="flex-item-left">                
+                    <img src="./media/intro-image.jpg" alt="Intro image" class="hide-on-mobile">
+                </div>
+                <div class="flex-item-right">
+                    <h3>About us</h3>
+                    <h2>The leading Company Type in Location</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae </p>
+                    <a href="contact.html"><button>Get a quote</button></a>
+                </div>
+              </div>
+        </section>
+        <img src="./media/intro-image.jpg" alt="Intro image" class="mobile-full-width">
+
+<!-- SERVICES -->
+        <section class="services">
+            <h3>View our</h3>
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae </p>
+
+            <div class="services-container">
+                <a href="services.html" class="services-item">
+                    <div class="services-img-container">
+                        <img src="./media/service-2.jpg">
+                    </div>
+                    <p>Service 1</p>
+                </a>
+                <a href="services.html" class="services-item">
+                    <div class="services-img-container">
+                        <img src="./media/service-3.jpg">
+                    </div>
+                    <p>Service 1</p>
+                </a>
+                <a href="services.html" class="services-item">
+                    <div class="services-img-container">
+                        <img src="./media/service-4.jpg">
+                    </div>
+                    <p>Service 1</p>
+                </a>
+                <a  href="services.html" class="services-item">
+                    <div class="services-img-container">
+                        <img src="./media/service-1.jpg">
+                    </div>
+                    <p>Service 1</p>
+                </a>
+                <a href="services.html" class="services-item">
+                    <div class="services-img-container">
+                        <img src="./media/service-2.jpg">
+                    </div>
+                    <p>Service 1</p>
+                </a>
+                <a  class="services-item">
+                    <div class="services-img-container">
+                        <img src="./media/service-3.jpg">
+                    </div>
+                    <p>Service 1</p>
+                </a>
+            </div>
+            <a href="services.html"><button>View all services</button></a>
+        </section>
+
+<!-- WHY CHOOSE US? -->
+        <section class="why-choose-us">
+            <h2>Why choose us?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae </p>
+            <div class="why-choose-us-container">
+                <div class="why-choose-us-item">
+                    <i class="fa-solid fa-screwdriver-wrench icon"></i>
+                    <p>Quality work&nbsp;<span class="tick">&#10004;</span></p>
+                </div>
+                <div class="why-choose-us-item">
+                    <i class="fa-solid fa-money-bills icon"></i>
+                    <p>Reasonable prices&nbsp;<span class="tick">&#10004;</span></p>
+                </div>
+                <div class="why-choose-us-item">
+                    <i class="fa-solid fa-truck-fast icon"></i>
+                    <p>Fast service&nbsp;<span class="tick">&#10004;</span></p>
+                </div>
+            </div>
+        </section>
+
+<!-- REVIEWS -->
+        <section class="reviews">
+            <h3>See what our customers say</h3>
+            <h2>Reviews</h2>
+
+            <div class="slideshow-container"> <!-- See "slideshow.js" -->
+                <div class="mySlides fade">
+                    <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae congue ipsum tincidunt. Nulla facilisi. Sed id ante nec nisi placerat blandit. Sed et sapien sed lacus tristique congue at id lacus."</p>
+                    <p class="review-name">-   A. Name</p>
+                </div>
+                <div class="mySlides fade">
+                    <p class="review-text">"Aliquam vitae purus sed est fermentum scelerisque id ut dui. Sed congue malesuada risus, eu lacinia urna rhoncus sit amet. Curabitur consectetur facilisis interdum. Etiam tristique nulla vitae mi consectetur, vitae venenatis est consectetur."</p>
+                    <p class="review-name">-   Another. Name</p>
+                </div>
+                <div class="mySlides fade">
+                    <p class="review-text">"Etiam tristique nulla vitae mi consectetur, vitae venenatis est consectetur."</p>
+                    <p class="review-name">-   One More Name</p>
+                </div>
+  
+                <a class="prev-button" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next-button" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <a href="reviews.html"><button>Read all reviews</button></a>
+        </section>
+
+<!-- LATEST WORK -->
+        <section class="latest-work">
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <h3>What we do</h3>
+                    <h2>Our latest work</h2>
+                    <p>Have a look at our most recent jobs</p>
+                    <a href="our-work.html"><button>View gallery</button>     </a>
+                </div>
+                <div class="flex-item-right">
+                    <div class="latest-work-img-grid">
+                            <img src="./media/service-1.jpg" alt="Intro image">
+                            <img src="./media/service-2.jpg" alt="Intro image">
+                            <img src="./media/service-3.jpg" alt="Intro image">
+                            <img src="./media/service-4.jpg" alt="Intro image">
+                    </div>
+                </div>
+              </div>
+        </section>
+
+<!-- CTA -->
+        <section class="CTA">
+            <h3>Get in touch</h3>
+            <h2>Get a free quote</h2>
+            <a href="contact.html"><button>Contact us</button></a>                
+        </section>
+    </main>
+
+<!-- FOOTER -->
+    <footer>
+        <script src="./js/footer.js"></script>
+    </footer>
+
+<!-- SCRIPTS -->
+    <!-- <script src="./js/header-scroll-effects.js"></script> -->
+    <script src="./js/mobile-header.js"></script>
+    <script src="./js/slideshow.js"></script>
+</body>
+</html>
