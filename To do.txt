@@ -12,6 +12,8 @@ Tidy up code ✓
 Create pages and add links to nav, homepage, etc. ✓
 Load nav and footer with JS ✓
 Mobile curtain menu - parallelogram (look at portfolio site)
+Button dark/light classes
+Check flex containers
 
 Comment code with company variables
 Footer parralax - later

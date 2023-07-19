@@ -1,16 +1,18 @@
 /* ================================== CONTENTS ===================================
 
-WHOLE PAGE STYLES
+WHOLE PAGE STYLES 
 HEADER
-DESKTOP NAV
+DESKTOP NAV (Mobile nav styles in "mobile.css") 
 BUTTONS
-HERO
-INTRO
-SERVICES
-WHY CHOOSE US
-REVIEWS
-FAQ
-CTA
+HOMEPAGE HERO
+NORMAL PAGE HERO
+INTRO SECTION
+SERVICES SECTION
+WHY CHOOSE US? SECTION
+LATEST WORK SECTION
+REVIEWS SECTION
+CTA SECTION
+CONTACT FORM
 FOOTER
 
 =============================================================================== */
@@ -31,7 +33,7 @@ FOOTER
 }
 
 * {
-    border: 1px dashed grey; /* Remove comment to see all element outlines */
+   border: 0px dashed grey; /* 1px to see all element outlines */
    box-sizing: border-box;
 }
 
@@ -59,7 +61,17 @@ h2 {
 }
 
 h3 {
+    font-size: 3rem;
+    font-family: var(--font-face-2);
+    color: var(--accent-color-1);
+    padding: 10px 0;
+    margin: 0;  
+}
+
+h4 {
     font-family: var(--font-face-1);
+    font-size: 1.3rem;
+    font-weight: 800;
     text-transform: uppercase;
     color: var(--accent-color-2);
     padding: 10px 0;
@@ -93,6 +105,8 @@ section, footer {
 .normal-link:hover {
     text-decoration: underline;
 }
+
+
 /* ========================================================== HEADER */
 header {
     display: flex;
@@ -125,6 +139,7 @@ header {
     padding: 10px 15px 15px 15px;
     border-radius: 0 0 5px 5px;
 }
+
 
 /* ======================================================= DESKTOP NAV */
                                  /*  Mobile nav styles in "mobile.css" */ 
@@ -214,7 +229,7 @@ header {
 
 
 /* ========================================================== BUTTONS */
-button {
+button, .form-button {
    padding: 12px 24px;
    margin: 10px 0;
    background-color: var(--accent-color-1);
@@ -305,7 +320,8 @@ button:hover {
     font-weight: 600;
 }
 
-/* ========================================---== NORMAL PAGE HERO */
+
+/* ============================================= NORMAL PAGE HERO */
 .page-hero {
     display: flex;
     height: 30vh;
@@ -324,7 +340,7 @@ button:hover {
 }
 
 
-/* ========================================================== INTRO */
+/* ================================================ INTRO SECTION */
 .intro {
     background-color: white;
 }
@@ -345,7 +361,7 @@ button:hover {
   }
 
 
-/* ========================================================== SERVICES */
+/* ================================================ SERVICES SECTION */
 .services {
     background-color: var(--very-light-grey);
     text-align: center;
@@ -406,7 +422,7 @@ button:hover {
 }
 
 
-/* ========================================================== WHY CHOOSE US? */
+/* ================================================== WHY CHOOSE US? SECTION */
 .why-choose-us {
     text-align: center;
     background-image: url("../media/bg-image-1.jpg");
@@ -425,7 +441,7 @@ button:hover {
 
 .why-choose-us-item {
     display: inline-block;
-    margin-top: 10%;
+    margin-top: 50px;
     align-self: flex-start;
     flex-basis: 33%;
     flex-grow: 0;
@@ -454,8 +470,7 @@ button:hover {
 }
 
 
-
-/* ========================================================== LATEST WORK */
+/* ================================================= LATEST WORK SECTION */
 .latest-work {
     background-color: var(--accent-color-1);
 }
@@ -493,7 +508,7 @@ button:hover {
 }
 
 
-/* ========================================================== REVIEWS */
+/* ==================================================== REVIEWS SECTION */
 .reviews {
     background-color: white;
     text-align: center;
@@ -598,7 +613,7 @@ button:hover {
 }
 
 
-/* ========================================================== CTA */
+/* ========================================================== CTA SECTION */
 .CTA {
     text-align: center;
     background-color: white;
@@ -606,6 +621,69 @@ button:hover {
 
 .CTA button {
     margin-top: 50px;
+}
+
+
+/* ========================================================= CONTACT FORM */
+.form {
+    background-color: white;
+    text-align: center;
+}
+
+.form p {
+    text-align: left;
+}
+
+.form-wrapper {
+    padding: 50px 0;
+}
+
+.field-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-basis: 100%;
+    padding: 20px 0;
+    font-size: 1.4rem;
+}
+
+.form-field {
+    display: inline;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 0 0 4px 0;
+    overflow-x: hidden;
+    color: var(--dark-grey);
+    transition: 0.3s;
+}
+
+.form-field::placeholder {
+    color: var(--dark-grey);
+}
+
+.form-field:focus {
+    background-color: rgb(238, 238, 238);   
+}
+
+.form-icon {
+    display: inline;
+    padding-right: 10px;
+    color: var(--accent-color-2);
+}
+
+#message  {
+    height: 36px;
+}
+
+#message:focus {
+    height: 200px;
+    overflow-y: auto;
 }
 
 
@@ -625,16 +703,18 @@ footer {
     width: 75%;
     max-width: 300px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding: 50px 0;
     filter: invert();
 }
 
 .footer-col-container {
     display: flex;
+    margin:  0;
+    gap: 20px;
 }
 
 .footer-col {
-    width: 33%;
+    flex-basis: 100%;
 }
 
 footer p, #tel {
@@ -654,29 +734,13 @@ footer h3 {
 
 .footer-icon {
     font-size: 36px;
-    margin-top: 15px;
+    margin: 15px 5px;
     color: var(--accent-color-2);
+    transition: color 0.3s;
 }
 
-.social-icons-container {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-
-}
-
-.social-icon {
-    box-sizing: content-box;
-    display: inline-block;
-    font-size: 50px;
-    margin: 0;
-    padding: 8px;
-    color: var(--very-light-grey);
-    transition: 0.3s;
-}
-
-.social-icon:hover {
-    color: var(--accent-color-2);
+a .footer-icon:hover {
+    color: white;
 }
 
 .footer-bottom {

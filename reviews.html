@@ -41,17 +41,40 @@
 
 <!-- MAIN CONTENT -->
         <section>
-            <p>Content</p>
+            <section class="reviews">  
+                <div class="slideshow-container"> <!-- See "slideshow.js" -->
+                    <div class="mySlides fade">
+                        <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae congue ipsum tincidunt. Nulla facilisi. Sed id ante nec nisi placerat blandit. Sed et sapien sed lacus tristique congue at id lacus."</p>
+                        <p class="review-name">-   A. Name</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p class="review-text">"Aliquam vitae purus sed est fermentum scelerisque id ut dui. Sed congue malesuada risus, eu lacinia urna rhoncus sit amet. Curabitur consectetur facilisis interdum. Etiam tristique nulla vitae mi consectetur, vitae venenatis est consectetur."</p>
+                        <p class="review-name">-   Another. Name</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p class="review-text">"Etiam tristique nulla vitae mi consectetur, vitae venenatis est consectetur."</p>
+                        <p class="review-name">-   One More Name</p>
+                    </div>
+      
+                    <a class="prev-button" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-button" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+    
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
         </section>
     </main>
 
 <!-- FOOTER -->
     <footer>
-        <script src="./js/footer.js"></script>
+        <script type="text/javascript" src="./js/footer.js"></script>
     </footer>
 
 <!-- SCRIPTS -->
-    <script src="./js/mobile-header.js"></script>
-    <script src="./js/slideshow.js"></script>
+    <script type="text/javascript" src="./js/mobile-header.js"></script>
 </body>
 </html>

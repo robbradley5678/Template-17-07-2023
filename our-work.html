@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/our-work.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
@@ -39,19 +40,73 @@
             </div>
         </section>
 
-<!-- MAIN CONTENT -->
+<!-- GALLERY -->
         <section>
-            <p>Content</p>
+            <h3>A header</h3>
+            <p>We take great pride in our work etc etc.</p>
+
+            <div>
+                <div class="gallery">
+                    <img src="media/gallery/thumbs/001.jpg" onclick="openLightbox();toSlide(1)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/002.jpg" onclick="openLightbox();toSlide(2)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/003.jpg" onclick="openLightbox();toSlide(3)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/004.jpg" onclick="openLightbox();toSlide(4)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/005.jpg" onclick="openLightbox();toSlide(5)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/006.jpg" onclick="openLightbox();toSlide(6)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/007.jpg" onclick="openLightbox();toSlide(7)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/008.jpg" onclick="openLightbox();toSlide(8)" class="thumb" loading="lazy">
+                    <img src="media/gallery/thumbs/009.jpg" onclick="openLightbox();toSlide(9)" class="thumb" loading="lazy">
+                </div>
+
+                <div id="lightbox" class="modal">
+                    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+
+                    <div class="modal-content">
+                        <div class="slide">
+                            <img src="media/gallery/001.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/002.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/003.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/004.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/005.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/006.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/007.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/008.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="media/gallery/009.jpg" class="image-slide" alt="" loading="lazy">
+                        </div>
+                
+                        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+               </div>
+            </div>
         </section>
+
+        <h3>Add CTA here</h3>
     </main>
 
 <!-- FOOTER -->
     <footer>
-        <script src="./js/footer.js"></script>
+        <script type="text/javascript" src="./js/footer.js"></script>
     </footer>
 
 <!-- SCRIPTS -->
-    <script src="./js/mobile-header.js"></script>
-    <script src="./js/slideshow.js"></script>
+    <script type="text/javascript" src="./js/mobile-header.js"></script>
+    <script type="text/javascript" src="./js/lightbox.js"></script>
 </body>
 </html>

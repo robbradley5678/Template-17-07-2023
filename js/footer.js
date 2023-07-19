@@ -2,7 +2,7 @@ let footer = document.querySelector('footer');
 let year = new Date().getFullYear();
 
 footer.innerHTML = `
-<img src="./media/logo/logo-transparrent.png" class="footer-logo">
+
 
 <div class="footer-col-container">
     <div class="footer-col">
@@ -17,16 +17,15 @@ footer.innerHTML = `
         <i class="fa-solid fa-envelope footer-icon"></i>
         <p>email@email.com</p>
     </div>
-
+    <div class="footer-col">
+        <a href="#"><i class="fa-brands fa-facebook footer-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter footer-icon"></i></a>
+        <p>Follow us</p>
+    </div>
 </div>
 
-<h3>Follow us</h3>   
-
-<div class="social-icons-container">
-    <a href="#"><i class="fa-brands fa-facebook social-icon"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
-</div>
+<img src="./media/logo/logo-transparrent.png" class="footer-logo">
 
 <div class="footer-bottom">
     <p class="footer-copyright">&copy; ${year} Company Name | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>

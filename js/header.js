@@ -3,7 +3,8 @@
 let header = document.querySelector('header');
 let root = document.querySelector(':root');
 let squareLogo = document.querySelector(".square-logo");
-let heroHeight = window.innerHeight * 0.8;
+let heroHeight = window.innerHeight * 0.3;
+
 
 header.innerHTML = `
 <a href="index.html"> <!-- Logo -- add class "square-logo" to img if square -->
@@ -32,20 +33,21 @@ header.innerHTML = `
 
 <nav id="mobile-nav">
     <ul>
-        <li><a href="#">Home</a></li>
-        <li class="mobile-nav-dropdown">
-            <a href="#">Services &#9662;</a>
-            <ul class="mobile-nav-dropdown-content">
+        <li><a href="index.html">Home</a></li>
+        <li id="mobile-nav-dropdown">
+            <a href="#">Services <span id="dropdown-arrow">&#9662;</span></a>
+            <ul id="mobile-nav-dropdown-content">
                 <li class="mobile-dropdown-item"><a href="#">Dropdown service 1</a></li>
                 <li class="mobile-dropdown-item"><a href="#">Dropdown service 2</a></li>
                 <li class="mobile-dropdown-item"><a href="#">Dropdown service 3</a></li>
             </ul>
         </li>
-        <li><a href="#">Our work</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="our-work.html">Our work</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>`;
+</nav>
+`;
 
 
 function scrollFunction() {
