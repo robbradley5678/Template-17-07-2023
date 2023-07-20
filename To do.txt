@@ -11,25 +11,22 @@ Mobile ✓ - Check on device
 Tidy up code ✓
 Create pages and add links to nav, homepage, etc. ✓
 Load nav and footer with JS ✓
-Mobile curtain menu - parallelogram (look at portfolio site)
-Button dark/light classes
-Check flex containers
-
+Mobile curtain menu + accordian ✓
+Homepage services section ✓
 Comment code with company variables
-Footer parralax - later
 Parallax
 Animations
-
-
-mobile-header.JS
-    - Add/remove animation classes (slide in and out)
     
-
 
 Other pages:
 - Services
-- Our work (gallery)
+- Our work (gallery) ✓
 - Reviews
-- Contact
-- Terms and Conditions
-- 404
+- Contact ✓
+- Success and failure ✓
+- Terms and Conditions - default text?
+- 404 ✓
+
+Maybe:
+- Button dark/light classes ✓
+- Check flex containers

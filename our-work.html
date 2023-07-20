@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/our-work.css">
+    <link rel="stylesheet" href="./lightbox/lightbox.css">
+ 
+    
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
@@ -28,6 +31,7 @@
 </head>
 
 <body>
+ <!-- HEADER -->
     <header>
         <script type="text/javascript" src="./js/header.js"></script>
     </header>
@@ -42,62 +46,70 @@
 
 <!-- GALLERY -->
         <section>
-            <h3>A header</h3>
-            <p>We take great pride in our work etc etc.</p>
+            <p>Whether you want some inspiration for your own project, or would just like to see the quality of our work, have a look at some of our latest installations below</p>
 
-            <div>
-                <div class="gallery">
-                    <img src="media/gallery/thumbs/001.jpg" onclick="openLightbox();toSlide(1)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/002.jpg" onclick="openLightbox();toSlide(2)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/003.jpg" onclick="openLightbox();toSlide(3)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/004.jpg" onclick="openLightbox();toSlide(4)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/005.jpg" onclick="openLightbox();toSlide(5)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/006.jpg" onclick="openLightbox();toSlide(6)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/007.jpg" onclick="openLightbox();toSlide(7)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/008.jpg" onclick="openLightbox();toSlide(8)" class="thumb" loading="lazy">
-                    <img src="media/gallery/thumbs/009.jpg" onclick="openLightbox();toSlide(9)" class="thumb" loading="lazy">
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="media/gallery/001.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/001.jpg">
+                    </a>
                 </div>
-
-                <div id="lightbox" class="modal">
-                    <span class="close pointer" onclick="closeLightbox()">&times;</span>
-
-                    <div class="modal-content">
-                        <div class="slide">
-                            <img src="media/gallery/001.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/002.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/003.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/004.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/005.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/006.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/007.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/008.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                        <div class="slide">
-                            <img src="media/gallery/009.jpg" class="image-slide" alt="" loading="lazy">
-                        </div>
-                
-                        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <div class="gallery-item">
+                    <a href="media/gallery/002.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/002.jpg">
+                    </a>
                 </div>
-               </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/003.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/003.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/004.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/004.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/005.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/005.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/006.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/006.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/007.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/007.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/008.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/008.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/009.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/009.jpg">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="media/gallery/009.jpg" data-lightbox="gallery" data-image-alg="Image 1">
+                        <img src="media/gallery/thumbs/009.jpg">
+                    </a>
+                </div>
             </div>
         </section>
 
-        <h3>Add CTA here</h3>
+        <!-- CTA -->
+        <section class="CTA">
+            <h4>Get in touch</h4>
+            <h2>Ready to work with us?</h2>
+            <a href="contact.html"><button class="hero-button-light">Contact us</button></a>
+            <a href="contact.html"><button class="hero-button-dark">0790 192 7777</button></a>                    
+        </section>
     </main>
 
 <!-- FOOTER -->
@@ -106,7 +118,7 @@
     </footer>
 
 <!-- SCRIPTS -->
-    <script type="text/javascript" src="./js/mobile-header.js"></script>
-    <script type="text/javascript" src="./js/lightbox.js"></script>
+    <script src="./js/mobile-header.js"></script>
+    <script src="./lightbox/lightbox.js"></script>
 </body>
 </html>

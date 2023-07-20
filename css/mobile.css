@@ -151,24 +151,24 @@
    .icon {
     font-size: 8rem;
     color: var(--very-light-grey);
-}
+    }
 
-.footer-icon {
-    margin: 25px  25px 0 25px;
-}
+    .footer-icon {
+        margin: 25px  25px 0 25px;
+    }
 
-.why-choose-us-item p {
-    font-size: 2rem;
-    font-weight: bold;
-}
+    .why-choose-us-item p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
-.footer-col-container {
-    flex-wrap: wrap;
-}
+    .footer-col-container {
+        flex-wrap: wrap;
+    }
 
-.footer-col {
-    width: 100%;
-}
+    .footer-col {
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -187,10 +187,10 @@
     }
 
     /* ==================== BUTTONS */
-    button, .form-button {
+    button {
         width: 100%;
     }
-    .hero-button-1, .hero-button-2 {
+    .hero-button-light, .hero-button-dark {
         margin: 0 0 30px 0;
     }
 

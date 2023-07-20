@@ -6,10 +6,6 @@ footer.innerHTML = `
 
 <div class="footer-col-container">
     <div class="footer-col">
-        <i class="fa-sharp fa-solid fa-location-dot footer-icon"></i>
-        <p>123 Street Name, City Name, AB1&nbsp;4CO</p>
-    </div>
-    <div class="footer-col">
         <i class="fa-sharp fa-solid fa-phone footer-icon"></i>
         <a href="tel:01234567890" id="tel">01234 567890</a>
     </div>
@@ -17,12 +13,17 @@ footer.innerHTML = `
         <i class="fa-solid fa-envelope footer-icon"></i>
         <p>email@email.com</p>
     </div>
+
     <div class="footer-col">
-        <a href="#"><i class="fa-brands fa-facebook footer-icon"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter footer-icon"></i></a>
-        <p>Follow us</p>
+        <i class="fa-sharp fa-solid fa-location-dot footer-icon"></i>
+        <p>123 Street Name, City Name, AB1&nbsp;4CO</p>
     </div>
+</div>
+<div class="footer-col">
+    <a href="#"><i class="fa-brands fa-facebook footer-icon"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter footer-icon"></i></a>
+    <p>Follow us</p>
 </div>
 
 <img src="./media/logo/logo-transparrent.png" class="footer-logo">

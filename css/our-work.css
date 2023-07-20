@@ -1,34 +1,44 @@
-.gallery {
-	display: flex;
-	justify-content: space-between;
-    flex-grow: 1;
-    flex-shrink: 1;
-    gap: 10px;
-    flex-wrap: wrap;
+p {
+  text-align: center;
 }
 
-.thumb {
+.gallery {
+	display: flex;
+  padding: 80px 0;
+	justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 10px 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
     display: block;
     width: 32%;
     height: 32%;
-    background-color: grey;
+    background-color: var(--very-light-grey);
     border-radius: 5px;
     cursor: pointer;
 }
 
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
 @media(max-width: 800px) {
-    .thumb {
+    .gallery-item {
         width: 49%;
     }
 }
 
 @media(max-width: 650px) {
-    .thumb {
+    .gallery-item {
         width: 100%;
     }
 }
 
-.thumb:hover {
+.gallery-item:hover {
     transform: scale(1.02, 1.02);
     overflow: hidden;
     transition: 0.3s;
@@ -36,91 +46,3 @@
 }
 
 
-.modal {
-  display: none; /* Changed to flex in "lightbox.js" */
-  align-items: center;
-  position: fixed;
-  z-index: 3;
-  padding: 10% 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(10px);
-}
-
-.modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  height: 100%;
-
-}
-
-.slide {
-  display: none;
-}
-
-.image-slide {
-    height: 100%;
-    width: 100%;
-    max-height: 100vh;
-    max-width: 100vh;
-    object-fit: contain;
-}
-
-.modal-preview {
-	width: 100%;
-}
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.previous,.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.previous {
-    left: 0;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.previous:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
