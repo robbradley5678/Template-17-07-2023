@@ -7,7 +7,7 @@ footer.innerHTML = `
 <div class="footer-col-container">
     <div class="footer-col">
         <i class="fa-sharp fa-solid fa-phone footer-icon"></i>
-        <a href="tel:01234567890" id="tel">01234 567890</a>
+        <a href="tel:01234567890" title="Tap to call us" id="tel">01234 567890</a>
     </div>
     <div class="footer-col">
         <i class="fa-solid fa-envelope footer-icon"></i>

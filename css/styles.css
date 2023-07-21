@@ -17,6 +17,9 @@ FOOTER
 
 =============================================================================== */
 
+/* =============================================================== GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Domine:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
 
 /* ========================================================== WHOLE PAGE STYLES */    
 :root {
@@ -80,6 +83,7 @@ h4 {
 
 p {
     font-size: 1.6rem;
+    line-height: 2.1rem;
     color: var(--dark-grey);
 }
 
@@ -173,7 +177,7 @@ header {
 }
 
 .nav-item a:hover {
-    color: var(--accent-color-1);
+    color: var(--accent-color-2);
 }
 
 #nav-cta {
@@ -336,7 +340,7 @@ header {
 
 .hero-text h2 {
     font-family: var(--font-face-1);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color:white;
     font-weight: 600;
 }
@@ -356,14 +360,14 @@ header {
     position: relative;
 }
 
-.page-hero h1, .page-hero h2 {
-    padding: 0;
-    margin: 0;
+.page-hero-text {
     text-align: center;
 }
 
+
 .page-hero h1 {
     font-size: 5rem;
+    text-align: center;
 }
 
 .page-hero h2 {
@@ -374,10 +378,6 @@ header {
 
 
 /* ================================================ INTRO SECTION */
-.intro {
-    background-color: white;
-}
-
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -403,7 +403,7 @@ header {
 .services-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 2%;
     justify-content: space-between;
 }
 
@@ -440,14 +440,15 @@ header {
     font-weight: 800;
     padding: 0;
     margin: 20px 0;
+    transition: 0.3s;
 }
 
 .services-item:hover.services-item img {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.03, 1.03);
 }
 
 .services-item:hover.services-item p {
-    color: var(--accent-color-1);
+    color: var(--accent-color-2);
 }
 
 .services button {
@@ -543,6 +544,7 @@ header {
    position: relative;
    margin: 0 auto;
    padding: 0;
+   transition: 1s;
 }
   
 .prev-button, .next-button {

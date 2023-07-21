@@ -1,0 +1,15 @@
+.intro {
+    text-align: center;
+}
+
+.service:nth-child(odd) {
+    background-color: var(--very-light-grey);
+}
+
+.service:nth-child(even) .flex-container {
+    flex-direction: row-reverse;
+}
+
+.service:nth-child(odd) .flex-container {
+    flex-direction: row;
+}

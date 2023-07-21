@@ -141,6 +141,10 @@
      .field-wrapper, .contact-elements-container {
         flex-direction: column;
      }
+
+     .services-item {
+        width: 47%; 
+    }
 }
 
 @media (max-width: 800px) {
