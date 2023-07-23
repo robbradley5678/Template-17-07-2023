@@ -1,24 +1,3 @@
-/* Contains header HTML (desktop and mobile) and scroll effects */
-let root = document.querySelector(':root');
-let header = document.querySelector('header');
-let heroHeight = window.innerHeight * 0.3;
-
-/*
-function loadContent () {
-    fetch('./header.html')
-    .then(res => {
-        return res.text();
-    })
-    .then(html => {
-        header.innerHTML = html;
-    })
-};
-
-loadContent();
-
-*/
-
-header.innerHTML = `
 <a href="index.html"> <!-- Logo -- add class "square-logo" to img if square -->
     <img src="./media/logo/logo.jpg" alt="logo" class="logo"> <!-- Add class "square-logo" to img if square -->
 </a>
@@ -59,24 +38,3 @@ header.innerHTML = `
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-`;
-
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    root.style.setProperty('--header-height', '65px'); 
-  } else {
-    root.style.setProperty('--header-height', '75px'); 
-  }
-
-  if (document.body.scrollTop > heroHeight || document.documentElement.scrollTop > heroHeight) {
-    header.style.boxShadow = "0px 1px 5px rgba(0,0,0,0.5)";
-  } else {
-    header.style.boxShadow = "none";
-  }
-};
-
-window.onscroll = function() {scrollFunction()};
-
-
-

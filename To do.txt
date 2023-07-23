@@ -13,7 +13,13 @@ Create pages and add links to nav, homepage, etc. ✓
 Load nav and footer with JS ✓
 Mobile curtain menu + accordian ✓
 Homepage services section ✓
+DRY button styles ✓
+Mobile services link (disable?), animate arrow rotating ✓
+Footer font sizes ✓
+
 Comment code with company variables
+Image alt tags
+Refactor JS to add/remove CSS classes where appropriate, with comments in other code to indicate when it's being changed
 Parallax
 Animations
     

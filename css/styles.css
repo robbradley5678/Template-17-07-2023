@@ -36,7 +36,7 @@ FOOTER
 }
 
 * {
-   border: 1px dashed grey; /* 1px to see all element outlines */
+   /* border: 1px dashed grey; /* Uncomment to see all element outlines */
    box-sizing: border-box;
 }
 
@@ -59,7 +59,7 @@ h1, h2, h3 {
 }
 
 h2 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
     margin: 0;
 }
 
@@ -209,7 +209,6 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: 0;
-    transition: 0.3s;
 }
 
 .dropdown-item:first-child {
@@ -233,82 +232,51 @@ header {
 
 
 /* ========================================================== BUTTONS */
-.button-dark {
-   padding: 12px 40px;
-   margin: 10px 20px 10px 0;
-   background-color: var(--accent-color-1);
-   border: 2px solid var(--accent-color-1);
-   border-radius: 5px;
-   font-family: var(--font-face-1);
-   font-size: 1.7rem;
-   font-weight: 600;
-   color: white;
-   transition: 0.3s;
-   cursor: pointer;
-}
-
-.button-light {
+button {
     padding: 12px 40px;
-    margin: 10px 0px;
-    background-color: white;
-    border: 2px solid var(--accent-color-1);
+    margin: 10px 0;
     border-radius: 5px;
     font-family: var(--font-face-1);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    color: var(--accent-color-1);
     transition: 0.3s;
     cursor: pointer;
 }
- 
-.button-dark:hover {
-   background-color: var(--accent-color-2);
-   border: 2px solid var(--accent-color-2);
-}
 
-.button-light:hover {
+button:hover {
     background-color: var(--accent-color-2);
     border: 2px solid var(--accent-color-2);
     color: white;
 }
 
+.button-dark {
+   margin: 10px 20px 10px 0;
+   background-color: var(--accent-color-1);
+   border: 2px solid var(--accent-color-1);
+   color: white;
+}
+
+.button-light {
+    background-color: white;
+    border: 2px solid var(--accent-color-1);
+    color: var(--accent-color-1);
+}
+ 
 .hero-button-container {
     padding: 40px 0 0 0;
 }
 
 .hero-button-light {
-    padding: 10px 40px;
     background-color: white;
     border: 2px solid white;
-    border-radius: 5px;
-    box-shadow: none;
     margin-right: 20px;
-    font-family: var(--font-face-1);
-    font-size: 1.8rem;
-    font-weight: 600;
     color: black;
-    transition: 0.3s;
-    cursor: pointer;
 }
 
 .hero-button-dark {
-    padding: 10px 40px;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(3px);
     border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 5px;
-    box-shadow: none;
-    font-family: var(--font-face-1);
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.hero-button-light:hover, .hero-button-dark:hover {
-    background-color: var(--accent-color-2);
-    border: 2px solid var(--accent-color-2);
     color: white;
 }
 
@@ -329,12 +297,12 @@ header {
 }
 
 .hero-text {
-    max-width: 1200px;
-    padding: 0 15%;
+   /* max-width: 1200px; */
+      padding: 0 15%;
 }
 
 .hero-text h1 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
     color: white;
 }
 
@@ -358,6 +326,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.hero-text {
+    width: 100%;
+    padding: 0 15%;
 }
 
 .page-hero-text {
@@ -489,12 +462,12 @@ header {
 }
 
 .icon {
-    font-size: 7rem;
+    font-size: 6rem;
     color: white
 }
 
 .why-choose-us-item p {
-    font-size: 1.7rem;
+    font-size: 1.6rem; 
     font-weight: bold;
 }
 
@@ -645,6 +618,7 @@ header {
 }
 
 .CTA h2 {
+    font-size: 3.5rem; 
     color: white;
     padding-bottom: 50px;
 }
@@ -755,7 +729,7 @@ footer p, #tel {
 #tel {
     display: block;
     margin: 1em 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 

@@ -23,9 +23,9 @@ hamburger.addEventListener("click", function() {
 dropdown.addEventListener("click", function() {
   if (content.style.maxHeight) {
     content.style.maxHeight = null;
-    dropdownArrow.innerHTML = "&#9662;"
+    dropdownArrow.style.transform = "rotate(0deg)";
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
-    dropdownArrow.innerHTML = "&#9652;"
+    dropdownArrow.style.transform = "rotate(180deg)";
   }
 });

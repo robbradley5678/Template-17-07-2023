@@ -13,3 +13,14 @@
 .service:nth-child(odd) .flex-container {
     flex-direction: row;
 }
+
+
+@media (max-width: 800px) {
+    .service:nth-child(odd) .flex-container {
+        flex-direction: column;
+    }
+
+    .service:nth-child(even) .flex-container {
+        flex-direction: column;
+    }
+}
