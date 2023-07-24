@@ -4,16 +4,14 @@
     <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews | ##Company Name</title>
-
+    <title>Reviews | ##Companyname</title>
     <!-- Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/df27d71215.js" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reviews.css">
     <link rel="stylesheet" href="./css/mobile.css">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png">
@@ -28,40 +26,97 @@
 
     <main>
  <!-- HERO -->
-        <section class="page-hero">
-            <div class="hero-text">
-                <h1>Reviews</h1>
+    <section class="page-hero">
+        <div class="hero-text">
+            <h1>Reviews</h1>
+        </div>
+    </section>
+
+<!-- MAIN CONTENT -->
+        <section class="review-section">
+            <p>We take great pride in providing exceptional service, and these reviews reflect our commitment to our customers. Have a read of the genuine feedback shared by our satisfied customers</p>
+
+            <div class="review-grid">
+            <!-- Column 1 -->
+                <div class="review-column">
+                    <div class="review-card">
+                        <img src="./media/reviews/review-1.jpg" alt="Reviewer name">
+                        <p class="review-card-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            In publishing and graphic design, Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.<br><br>Lorem ipsum may be used as a placeholder before final copy is available.
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <div>
+                            <span class="review-name">-  A. Name</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <img src="./media/reviews/review-2.jpg" alt="Reviewer name">
+                        <p class="review-card-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of 'dolorem ipsum' ('pain itself').
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <p>
+                            <span class="review-name">-  A. Name</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <img src="./media/reviews/review-3.jpg" alt="Reviewer name">
+                        <p class="review-card-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <p>
+                            <span class="review-name">-  A. Name</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        </p>
+                    </div>
+                </div>
+
+            <!-- Column 2 -->
+                <div class="review-column">
+                    <div class="review-card">
+                        <img src="./media/reviews/review-4.jpg" alt="Reviewer name">
+                        <p class="review-card-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            The discovery of the text's origin is attributed to Richard McClintock, a Latin scholar at Hampden–Sydney College. McClintock connected Lorem ipsum to Cicero's writing sometime before 1982 while searching for instances of the Latin word consectetur, which was rarely used in classical literature.[2]<br><br> McClintock first published his discovery in a 1994 letter to the editor of Before & After magazine,[9] contesting the editor's earlier claim that Lorem ipsum held no meaning.[2]
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <p>
+                            <span class="review-name">-  A. Name</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <img src="./media/reviews/review-5.jpg" alt="Reviewer name">
+                        <p class="review-card-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum highlighted. Letters in brackets were added to Lorem ipsum and were not present in the source text:
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <p>
+                            <span class="review-name">-  A. Name</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-<!-- MAIN CONTENT -->
-        <section>
-            <section class="reviews">  
-                <div class="slideshow-container"> <!-- See "slideshow.js" -->
-                    <div class="mySlides fade">
-                        <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae congue ipsum tincidunt. Nulla facilisi. Sed id ante nec nisi placerat blandit. Sed et sapien sed lacus tristique congue at id lacus."</p>
-                        <p class="review-name">-   A. Name</p>
-                    </div>
-                    <div class="mySlides fade">
-                        <p class="review-text">"Aliquam vitae purus sed est fermentum scelerisque id ut dui. Sed congue malesuada risus, eu lacinia urna rhoncus sit amet. Curabitur consectetur facilisis interdum. Etiam tristique nulla vitae mi consectetur, vitae venenatis est consectetur."</p>
-                        <p class="review-name">-   Another. Name</p>
-                    </div>
-                    <div class="mySlides fade">
-                        <p class="review-text">"Etiam tristique nulla vitae mi consectetur, vitae venenatis est consectetur."</p>
-                        <p class="review-name">-   One More Name</p>
-                    </div>
-      
-                    <a class="prev-button" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next-button" onclick="plusSlides(1)">&#10095;</a>
-                </div>
+        <!-- CTA -->
+        <section class="CTA">
+            <h4>Get in touch</h4>
+            <h2>Ready to work with us?</h2>
+            <a href="contact.html"><button class="hero-button-light">Contact us</button></a>
+            <a href="tel:0123456789" title="Tap to call us"><button class="hero-button-dark">0790 192 7777</button></a>   
+    </section>
+</main>
     
-                <div class="dots-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </section>
-        </section>
+        
     </main>
 
 <!-- FOOTER -->
@@ -70,6 +125,5 @@
     </footer>
 
 <!-- SCRIPTS -->
-    <script src="./js/mobile-header.js"></script>
 </body>
 </html>

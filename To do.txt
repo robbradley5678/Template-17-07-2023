@@ -16,18 +16,16 @@ Homepage services section ✓
 DRY button styles ✓
 Mobile services link (disable?), animate arrow rotating ✓
 Footer font sizes ✓
-
-Comment code with company variables
-Image alt tags
-Refactor JS to add/remove CSS classes where appropriate, with comments in other code to indicate when it's being changed
+Image alt tags ✓
+Comment code with company variables ✓
 Parallax
 Animations
     
 
 Other pages:
-- Services
+- Services ✓
 - Our work (gallery) ✓
-- Reviews
+- Reviews ✓
 - Contact ✓
 - Success and failure ✓
 - Terms and Conditions - default text?
@@ -35,4 +33,4 @@ Other pages:
 
 Maybe:
 - Button dark/light classes ✓
-- Check flex containers
+- Check flex containers ✓

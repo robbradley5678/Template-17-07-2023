@@ -1,9 +1,8 @@
-/* Contains header HTML (desktop and mobile) and scroll effects */
 let root = document.querySelector(':root');
 let header = document.querySelector('header');
 let heroHeight = window.innerHeight * 0.3;
 
-/*
+
 function loadContent () {
     fetch('./header.html')
     .then(res => {
@@ -11,56 +10,41 @@ function loadContent () {
     })
     .then(html => {
         header.innerHTML = html;
+        let hamburger = document.getElementById("hamburger");
+        let mobileNav = document.getElementById("mobile-nav");
+        let dropdown = document.getElementById("mobile-nav-dropdown");
+        let content = document.getElementById("mobile-nav-dropdown-content");
+        let dropdownArrow = document.getElementById("dropdown-arrow");
+
+        /* Show/hide mobile menu */
+        hamburger.addEventListener("click", function() {
+            if (mobileNav.style.transform === "translateX(100vw)") {
+                mobileNav.style.transform = "translateX(0)"; // Moves mobileNav on screen
+                hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                hamburger.style.transform = "rotate(180deg)";
+                document.documentElement.style.overflow = 'hidden'; // Disable scroll
+            } else {
+                mobileNav.style.transform = "translateX(100vw)"; // Moves mobileNav off screen
+                hamburger.style.transform = "rotate(0deg)";
+                hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                document.documentElement.style.overflow = 'auto'; // Enable scroll
+            }
+        });
+
+        /* Expand/collapse mobile services dropdown */
+        dropdown.addEventListener("click", function() {
+            if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            dropdownArrow.style.transform = "scale(1)";
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            dropdownArrow.style.transform = "scale(-1)";
+            }
+         });
     })
 };
 
 loadContent();
-
-*/
-
-header.innerHTML = `
-<a href="index.html"> <!-- Logo -- add class "square-logo" to img if square -->
-    <img src="./media/logo/logo.jpg" alt="logo" class="logo"> <!-- Add class "square-logo" to img if square -->
-</a>
-
-<nav class="desktop-nav">
-    <ul>
-        <li class="nav-item desktop-nav-dropdown">
-            <a href="services.html">Services &#9662;</a>
-            <ul class="desktop-nav-dropdown-content">
-                <li class="dropdown-item"><a href="#">Dropdown service 1</a></li>
-                <li class="dropdown-item"><a href="#">Dropdown service 2</a></li>
-                <li class="dropdown-item"><a href="#">Dropdown service 3</a></li>
-            </ul>
-        </li>
-        <li class="nav-item"><a href="our-work.html">Our work</a></li>
-        <li class="nav-item"><a href="reviews.html">Reviews</a></li>
-        <li class="nav-item"><a href="contact.html" id="nav-cta">Contact</a></li>
-    </ul>
-</nav>
-
-<div id="hamburger">
-    <i class="fas fa-bars"></i>
-</div>
-
-<nav id="mobile-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li id="mobile-nav-dropdown">
-            <a href="#">Services <span id="dropdown-arrow">&#9662;</span></a>
-            <ul id="mobile-nav-dropdown-content">
-                <li class="mobile-dropdown-item"><a href="#">Dropdown service 1</a></li>
-                <li class="mobile-dropdown-item"><a href="#">Dropdown service 2</a></li>
-                <li class="mobile-dropdown-item"><a href="#">Dropdown service 3</a></li>
-            </ul>
-        </li>
-        <li><a href="our-work.html">Our work</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-`;
-
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {

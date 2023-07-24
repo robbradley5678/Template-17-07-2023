@@ -42,6 +42,7 @@
     width: 100%;
     color: white;
     text-decoration: none;
+    font-size: 2rem;
 }
 
 #mobile-nav a:active {
@@ -62,6 +63,7 @@
     float: right;
     transition: 0.5s;
 }
+
 
 /* ======================================================= MEDIA QUERIES */
 @media(max-width: 1200px) {
@@ -137,23 +139,25 @@
         padding-bottom: 0px;
      }
 
+     /* ================= SERVICES */
+     .services-item {
+        width: 47%; 
+    }
 
+      /* ================= CONTACT FORM */
      .field-wrapper, .contact-elements-container {
         flex-direction: column;
      }
 
-     .services-item {
-        width: 47%; 
     }
-}
 
 @media (max-width: 800px) {
    .why-choose-us-container {
-    flex-direction: column;
+        flex-direction: column;
    }
 
    .icon {
-    font-size: 7rem;
+        font-size: 7rem;
     }
 
     .footer-icon {
@@ -177,12 +181,12 @@
 @media (max-width: 650px) {
     /* ========== WHOLE PAGE STYLES */
     h2 {
-        font-size: 12vw;
+        font-size: 15vw;
     }
     
     /* ======================= HERO */
     .hero-text h1 {
-        font-size: 11vw;
+        font-size: 12vw;
     }
 
     .hero-text h2 {

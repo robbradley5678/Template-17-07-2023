@@ -4,16 +4,13 @@
     <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    
+    <title>##Companyname</title>
     <!-- Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/df27d71215.js" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png">
@@ -23,7 +20,7 @@
 
 <body>
     <header>
-        <script src="./js/header.js"></script> <!-- Contains header and mobile nav HTML, animations -->
+        <script src="./js/header.js"></script>
     </header>
 
     <main> 
@@ -64,42 +61,46 @@
             <div class="services-container">
                 <a href="services.html" class="services-item">
                     <div class="services-img-container">
-                        <img src="./media/service-11.jpg" loading="lazy">
+                        <img src="./media/service-11.jpg" loading="lazy" alt="Company service">
                     </div>
                     <p>Web design</p>
                 </a>
                 <a href="services.html" class="services-item">
                     <div class="services-img-container">
-                        <img src="./media/service-12.jpg" loading="lazy">
+                        <img src="./media/service-12.jpg" loading="lazy" alt="Company service">
                     </div>
                     <p>Web development</p>
                 </a>
                 <a href="services.html" class="services-item">
                     <div class="services-img-container">
-                        <img src="./media/service-13.jpg" loading="lazy">
+                        <img src="./media/service-13.jpg" loading="lazy" alt="Company service"> 
                     </div>
                     <p>Hosting</p>
                 </a>
                 <a  href="services.html" class="services-item">
                     <div class="services-img-container">
-                        <img src="./media/service-14.jpg" loading="lazy">
+                        <img src="./media/service-14.jpg" loading="lazy" alt="Company service">
                     </div>
                     <p>SEO</p>
                 </a>
                 <a href="services.html" class="services-item">
                     <div class="services-img-container">
-                        <img src="./media/service-15.jpg" loading="lazy">
+                        <img src="./media/service-15.jpg" loading="lazy" alt="Company service">
                     </div>
                     <p>Company branding</p>
                 </a>
                 <a  class="services-item">
                     <div class="services-img-container">
-                        <img src="./media/service-16.jpg" loading="lazy">
+                        <img src="./media/service-16.jpg" loading="lazy" alt="Company service">
                     </div>
                     <p>Something else</p>
                 </a>
             </div>
-            <a href="services.html"><button class="button-dark">View all services</button></a>
+
+            <a href="services.html">
+                <button class="button-dark">View all services</button>
+            </a>
+
         </section>
 
 <!-- LATEST WORK -->
@@ -113,10 +114,10 @@
         </div>
         <div class="flex-item-right">
             <div class="latest-work-img-grid">
-                    <img src="./media/service-1.jpg" alt="Intro image" loading="lazy">
-                    <img src="./media/service-2.jpg" alt="Intro image" loading="lazy">
-                    <img src="./media/service-3.jpg" alt="Intro image" loading="lazy">
-                    <img src="./media/service-4.jpg" alt="Intro image" loading="lazy">
+                    <img src="./media/service-1.jpg" alt="Intro image" loading="lazy" alt="Company service">
+                    <img src="./media/service-2.jpg" alt="Intro image" loading="lazy" alt="Company service">
+                    <img src="./media/service-3.jpg" alt="Intro image" loading="lazy" alt="Company service">
+                    <img src="./media/service-4.jpg" alt="Intro image" loading="lazy" alt="Company service">
             </div>
         </div>
       </div>
@@ -173,15 +174,21 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-            <a href="reviews.html"><button class="button-dark">Read all reviews</button></a>
+            <a href="reviews.html">
+                <button class="button-dark">Read all reviews</button>
+            </a>
         </section>
 
 <!-- CTA -->
         <section class="CTA">
                 <h4>Get in touch</h4>
                 <h2>Ready to work with us?</h2>
-                <a href="contact.html"><button class="hero-button-light">Contact us</button></a>
-                <a href="tel:0123456789" title="Tap to call us"><button class="hero-button-dark">0790 192 7777</button></a>   
+                <a href="contact.html">
+                    <button class="hero-button-light">Contact us</button>
+                </a>
+                <a href="tel:0123456789" title="Tap to call us">
+                    <button class="hero-button-dark">0790 192 7777</button>
+                </a>   
         </section>
     </main>
 
@@ -191,7 +198,6 @@
     </footer>
 
 <!-- SCRIPTS -->
-    <script src="./js/mobile-header.js" defer></script>
-    <script src="./js/slideshow.js"></script>
+    <script src="./js/review-slideshow.js"></script>
 </body>
 </html>

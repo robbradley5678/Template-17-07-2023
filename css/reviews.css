@@ -1,0 +1,66 @@
+:root {
+    --profile-photo-width: 150px;
+}
+
+.review-section {
+    background-color: var(--very-light-grey);
+}
+
+.review-section > p {
+    text-align: center;
+}
+
+.review-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 130px;
+}
+
+.review-column {
+    width: 47.5%;
+}
+
+.review-card {
+    flex-basis: 100%;
+    position: relative;
+    margin-bottom: 120px;
+    padding: 5% 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.review-card img {
+    display: block;
+    width: var(--profile-photo-width); 
+    position: absolute;
+    top: calc(var(--profile-photo-width)/-2);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.review-card-text {
+    margin-top: calc((var(--profile-photo-width)/2));
+    font-style: italic;
+}
+
+.review-card-text i {
+    color: var(--accent-color-2);
+}
+
+.location {
+    float: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--medium-grey);  
+}
+
+@media (max-width: 1000px) {
+    .review-column {
+        width: 100%;
+    }
+}

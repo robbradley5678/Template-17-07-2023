@@ -36,7 +36,7 @@ FOOTER
 }
 
 * {
-   /* border: 1px dashed grey; /* Uncomment to see all element outlines */
+    border: 0px dashed grey; /* Uncomment to see all element outlines */
    box-sizing: border-box;
 }
 
@@ -110,6 +110,10 @@ section, footer {
     text-decoration: underline;
 }
 
+ul {
+    font-size: 1.6rem;
+}
+
 
 /* ========================================================== HEADER */
 header {
@@ -151,9 +155,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: var(--font-face-1);
-    font-size: 1.25rem;
-    font-weight: 600;
+
 }
 
 .desktop-nav ul {
@@ -161,6 +163,9 @@ header {
     margin: 0;
     align-items: center;
     list-style-type: none;
+    font-family: var(--font-face-1);
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .nav-item {
@@ -347,6 +352,10 @@ button:hover {
     font-family: var(--font-face-2);
     font-size: 2rem;
     font-weight: 400;
+}
+
+.page-hero p {
+    color: white;
 }
 
 
@@ -562,7 +571,7 @@ button:hover {
     padding: 0;
     margin: 0;
     font-family: Caveat, cursive;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--medium-grey);
     text-align: right;
@@ -626,7 +635,6 @@ button:hover {
 .CTA h4 {
     color: var(--accent-color-2);
 }
-
 
 
 /* ========================================================= CONTACT FORM */
@@ -699,6 +707,7 @@ footer {
     text-align: center;
     background-color: rgb(29, 29, 29);
     color: var(--very-light-grey);
+    box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.75) inset;
     z-index: -1;
 
 }
@@ -729,7 +738,7 @@ footer p, #tel {
 #tel {
     display: block;
     margin: 1em 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
@@ -739,7 +748,7 @@ footer h3 {
 
 .footer-icon {
     font-size: 3rem;
-    margin: 25px  25px 0 25px;
+    margin: 25px 25px 0 25px;
     color: var(--accent-color-2);
     transition: color 0.3s;
 }
@@ -754,12 +763,12 @@ a .footer-icon:hover {
     flex-wrap: wrap;
     border-top: 1px solid grey;
     justify-content: space-between;
-    transition: 0.3s;
 }
 
 .footer-bottom a {
     color: grey;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .footer-bottom a:hover {
@@ -768,19 +777,22 @@ a .footer-icon:hover {
 
 .footer-copyright {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
+    font-weight: bold;
     color: grey;
 }
 
 .footer-built-by {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: right;
-    color: grey;   
+    font-weight: bold;
+    color: grey;
 }
 
 .mobile-full-width {
     display: none;
     width: 100%;
+
 }
