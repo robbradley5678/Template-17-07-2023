@@ -1,19 +1,21 @@
 /* ================================== CONTENTS ===================================
 
+GOOGLE FONTS
 WHOLE PAGE STYLES 
-HEADER
-DESKTOP NAV (Mobile nav styles in "mobile.css") 
 BUTTONS
+HEADER
+DESKTOP NAV
 HOMEPAGE HERO
-NORMAL PAGE HERO
-INTRO SECTION
-SERVICES SECTION
-WHY CHOOSE US? SECTION
+NORMAL PAGE HERO 
+FLEX CONTAINERS
+SERVICES SECTION 
+WHY CHOOSE US? SECTION 
 LATEST WORK SECTION
 REVIEWS SECTION
 CTA SECTION
 CONTACT FORM
 FOOTER
+JS CLASSES
 
 =============================================================================== */
 
@@ -112,6 +114,57 @@ section, footer {
 ul {
     font-size: 1.6rem;
 }
+
+
+/* ========================================================== BUTTONS */
+button {
+    padding: 12px 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: var(--font-face-1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-color-2);
+    border: 2px solid var(--accent-color-2);
+    color: white;
+}
+
+.button-dark {
+   margin: 10px 20px 10px 0;
+   background-color: var(--accent-color-1);
+   border: 2px solid var(--accent-color-1);
+   color: white;
+}
+
+.button-light {
+    background-color: white;
+    border: 2px solid var(--accent-color-1);
+    color: var(--accent-color-1);
+}
+ 
+.hero-button-container {
+    padding: 40px 0 0 0;
+}
+
+.hero-button-light {
+    background-color: white;
+    border: 2px solid white;
+    margin-right: 20px;
+    color: black;
+}
+
+.hero-button-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: white;
+}
+
 
 
 /* ========================================================== HEADER */
@@ -235,56 +288,6 @@ header {
 }
 
 
-/* ========================================================== BUTTONS */
-button {
-    padding: 12px 40px;
-    margin: 10px 0;
-    border-radius: 5px;
-    font-family: var(--font-face-1);
-    font-size: 1.6rem;
-    font-weight: 600;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--accent-color-2);
-    border: 2px solid var(--accent-color-2);
-    color: white;
-}
-
-.button-dark {
-   margin: 10px 20px 10px 0;
-   background-color: var(--accent-color-1);
-   border: 2px solid var(--accent-color-1);
-   color: white;
-}
-
-.button-light {
-    background-color: white;
-    border: 2px solid var(--accent-color-1);
-    color: var(--accent-color-1);
-}
- 
-.hero-button-container {
-    padding: 40px 0 0 0;
-}
-
-.hero-button-light {
-    background-color: white;
-    border: 2px solid white;
-    margin-right: 20px;
-    color: black;
-}
-
-.hero-button-dark {
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(3px);
-    border: 2px solid rgba(255, 255, 255, 1);
-    color: white;
-}
-
-
 /* =================================================== HOMEPAGE HERO */
 .hero {
     display: flex;
@@ -359,7 +362,7 @@ button:hover {
 }
 
 
-/* ================================================ INTRO SECTION */
+/* ================================================ FLEX CONTAINERS  */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -795,4 +798,30 @@ a .footer-icon:hover {
     display: none;
     width: 100%;
 
+}
+
+/* ========================================================== JS CLASSES */
+.hidden-until-scroll {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.delay-200ms{
+    transition-delay: 200ms;
+}
+
+.delay-400ms{
+    transition-delay: 400ms;
+}
+
+.delay-600ms{
+    transition-delay: 600ms;
+}
+
+.delay-800ms{
+    transition-delay: 800ms;
 }

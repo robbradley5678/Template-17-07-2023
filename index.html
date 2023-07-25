@@ -27,9 +27,9 @@
  <!-- HERO -->
         <section class="hero">
             <div class="hero-text">
-                <h1>Professional website services in Warrington</h1>
-                <h2>Proudly serving Warrington and all surrounding areas</h2>
-                <div class="hero-button-container">
+                <h1 class="hidden-until-scroll">Professional website services in Warrington</h1>
+                <h2 class="hidden-until-scroll dela-200ms">Proudly serving Warrington and all surrounding areas</h2>
+                <div class="hero-button-container hidden-until-scroll delay-400ms">
                     <a href="contact.html"><button class="hero-button-light">Get a quote</button></a>
                     <a href="#intro"><button class="hero-button-dark">Learn more</button></a>
                 </div>
@@ -37,7 +37,7 @@
         </section>
 
 <!--INTRO -->
-        <section class="intro" id="intro">
+        <section class="intro hidden-until-scroll" id="intro">
             <div class="flex-container">
                 <div class="flex-item-left">                
                     <img src="./media/intro-image.jpg" alt="Intro image" class="hide-on-mobile" loading="lazy">
@@ -53,7 +53,7 @@
         <img src="./media/intro-image.jpg" alt="Intro image" class="mobile-full-width" loading="lazy">
 
 <!-- SERVICES -->
-        <section class="services">
+        <section class="services hidden-until-scroll">
             <h4>View our</h4>
             <h2>Services</h2>
             <p>With over 10 years experience in web design and development, we've honed our craft to give you everything you need to get your business online. We're experts in: </p>
@@ -104,7 +104,7 @@
         </section>
 
 <!-- LATEST WORK -->
-<section class="latest-work">
+<section class="latest-work hidden-until-scroll">
     <div class="flex-container">
         <div class="flex-item-left">
             <h4>What we do</h4>
@@ -124,19 +124,19 @@
 </section>        
 
 <!-- WHY CHOOSE US? -->
-        <section class="why-choose-us">
+        <section class="why-choose-us hidden-until-scroll">
             <h2>Why choose us?</h2>
             <p>With every project we promise to deliver</p>
-            <div class="why-choose-us-container">
+            <div class="why-choose-us-container hidden-until-scroll delay-200ms">
                 <div class="why-choose-us-item">
                     <i class="fa-solid fa-screwdriver-wrench icon"></i>
                     <p>Quality work&nbsp;<span class="tick">&#10004;</span></p>
                 </div>
-                <div class="why-choose-us-item">
+                <div class="why-choose-us-item hidden-until-scroll delay-400ms">
                     <i class="fa-solid fa-money-bills icon"></i>
                     <p>Value for money&nbsp;<span class="tick">&#10004;</span></p>
                 </div>
-                <div class="why-choose-us-item">
+                <div class="why-choose-us-item hidden-until-scroll delay-600ms">
                     <i class="fa-solid fa-truck-fast icon"></i>
                     <p>Fast service&nbsp;<span class="tick">&#10004;</span></p>
                 </div>
@@ -144,11 +144,11 @@
         </section>
 
 <!-- REVIEWS -->
-        <section class="reviews">
+        <section class="reviews hidden-until-scroll">
             <h4>See what our customers say</h4>
             <h2>Reviews</h2>
 
-            <div class="slideshow-container"> <!-- See "slideshow.js" -->
+            <div class="slideshow-container"> <!-- See "review-slideshow.js" -->
                 <div class="mySlides fade">
                     <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nunc sed magna vestibulum, vitae congue ipsum tincidunt. Nulla facilisi.
                     <br><br>    
@@ -180,14 +180,14 @@
         </section>
 
 <!-- CTA -->
-        <section class="CTA">
+        <section class="CTA hidden-until-scroll">
                 <h4>Get in touch</h4>
                 <h2>Ready to work with us?</h2>
                 <a href="contact.html">
-                    <button class="hero-button-light">Contact us</button>
+                    <button class="hero-button-light hidden-until-scroll delay-200ms">Contact us</button>
                 </a>
                 <a href="tel:0123456789" title="Tap to call us">
-                    <button class="hero-button-dark">0790 192 7777</button>
+                    <button class="hero-button-dark hidden-until-scroll delay-400ms">0790 192 7777</button>
                 </a>   
         </section>
     </main>
@@ -199,5 +199,6 @@
 
 <!-- SCRIPTS -->
     <script src="./js/review-slideshow.js"></script>
+    <script src="./js/show-on-scroll.js"></script>
 </body>
 </html>

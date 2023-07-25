@@ -26,18 +26,6 @@ p {
   width: 100%;
 }
 
-@media(max-width: 800px) {
-    .gallery-item {
-        width: 49%;
-    }
-}
-
-@media(max-width: 650px) {
-    .gallery-item {
-        width: 100%;
-    }
-}
-
 .gallery-item:hover {
     transform: scale(1.02, 1.02);
     overflow: hidden;
@@ -46,3 +34,14 @@ p {
 }
 
 
+@media(max-width: 800px) {
+  .gallery-item {
+      width: 49%;
+  }
+}
+
+@media(max-width: 650px) {
+  .gallery-item {
+      width: 100%;
+  }
+}

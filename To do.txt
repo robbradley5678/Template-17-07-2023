@@ -19,7 +19,7 @@ Footer font sizes ✓
 Image alt tags ✓
 Comment code with company variables ✓
 Parallax
-Animations
+Animations - multiple timing?
     
 
 Other pages:
@@ -34,3 +34,6 @@ Other pages:
 Maybe:
 - Button dark/light classes ✓
 - Check flex containers ✓
+
+Mouse ball?
+Image compression tool?

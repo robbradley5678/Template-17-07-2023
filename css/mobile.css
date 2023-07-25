@@ -93,7 +93,7 @@
         display: block;
     }
 
-    /* ========================= INTRO */
+    /* ================ FLEX CONTAINER */
     .flex-container {
         flex-direction: column-reverse;
     }
@@ -114,7 +114,7 @@
        display: none;
     }
 
-    /* =============== WHY CHOOSE US */
+    /* ================= WHY CHOOSE US */
     .why-choose-us-item {
         display: block;
         width: 100%;
@@ -128,6 +128,7 @@
         font-size: 1.4rem;
         font-weight: bold;
     }
+
     /* ====================== REVIEWS */
     .review-text {
         padding: 0 10%;
@@ -208,6 +209,7 @@
     section > p {
         text-align: left;
     }
+
     /* ======================= HERO */
     .hero-text h1 {
         font-size: 12vw;
@@ -225,6 +227,7 @@
     .page-hero .hero-text h1 {
         font-size: 14vw;
     }
+
     /* ==================== BUTTONS */
     button {
         width: 100%;
@@ -252,11 +255,11 @@
         padding: 100px 5%;
     }
 
-    footer {
-        padding-bottom: 0;
-    }
-
     header, .hero-text {
         padding: 0 5%;
+    }
+    
+    footer {
+        padding-bottom: 0;
     }
 } 

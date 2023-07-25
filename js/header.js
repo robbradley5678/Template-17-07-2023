@@ -19,26 +19,26 @@ function loadContent () {
         /* Show/hide mobile menu */
         hamburger.addEventListener("click", function() {
             if (mobileNav.style.transform === "translateX(100vw)") {
-                mobileNav.style.transform = "translateX(0)"; // Moves mobileNav on screen
-                hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-                hamburger.style.transform = "rotate(180deg)";
-                document.documentElement.style.overflow = 'hidden'; // Disable scroll
+              mobileNav.style.transform = "translateX(0)"; // Moves mobileNav on screen
+              hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+              hamburger.style.transform = "rotate(180deg)";
+              document.documentElement.style.overflow = 'hidden'; // Disable scroll
             } else {
-                mobileNav.style.transform = "translateX(100vw)"; // Moves mobileNav off screen
-                hamburger.style.transform = "rotate(0deg)";
-                hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
-                document.documentElement.style.overflow = 'auto'; // Enable scroll
+              mobileNav.style.transform = "translateX(100vw)"; // Moves mobileNav off screen
+              hamburger.style.transform = "rotate(0deg)";
+              hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+              document.documentElement.style.overflow = 'auto'; // Enable scroll
             }
         });
 
         /* Expand/collapse mobile services dropdown */
         dropdown.addEventListener("click", function() {
             if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            dropdownArrow.style.transform = "scale(1)";
+              content.style.maxHeight = null;
+              dropdownArrow.style.transform = "scale(1)";
             } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            dropdownArrow.style.transform = "scale(-1)";
+              content.style.maxHeight = content.scrollHeight + "px";
+              dropdownArrow.style.transform = "scale(-1)";
             }
          });
     })
