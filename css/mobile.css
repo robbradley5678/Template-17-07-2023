@@ -147,14 +147,39 @@
       /* ================= CONTACT FORM */
      .field-wrapper, .contact-elements-container {
         flex-direction: column;
-     }
-
     }
+}
+
+ @media (max-width: 940px) and (orientation: landscape) {
+    /* ================= MOBILE NAV */
+    #mobile-nav > ul {
+        padding: 5% 10%; 
+        overflow: scroll;
+    }
+
+    #mobile-nav > ul > li {
+        padding: 10px 0 0 0;
+    }
+
+    /* ======================= HERO */
+    .hero .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .hero-text h2 {
+        font-size: 1.4rem;
+    }
+}
 
 @media (max-width: 800px) {
    .why-choose-us-container {
         flex-direction: column;
    }
+
+   .why-choose-us-item p {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
 
    .icon {
         font-size: 7rem;
@@ -164,10 +189,6 @@
         margin: 25px  25px 0 25px;
     }
 
-    .why-choose-us-item p {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
 
     .footer-col-container {
         flex-wrap: wrap;
@@ -184,13 +205,16 @@
         font-size: 15vw;
     }
     
+    section > p {
+        text-align: left;
+    }
     /* ======================= HERO */
     .hero-text h1 {
         font-size: 12vw;
     }
 
     .hero-text h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 400;
     }
 
@@ -198,6 +222,9 @@
         text-align: center;
     }
 
+    .page-hero .hero-text h1 {
+        font-size: 14vw;
+    }
     /* ==================== BUTTONS */
     button {
         width: 100%;
@@ -211,6 +238,13 @@
     .services-item {
         width: 100%;
     }
+
+     /* ==================== FOOTER */
+     .footer-bottom p {
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+     }
 }  
 
 @media (max-width: 450px) {

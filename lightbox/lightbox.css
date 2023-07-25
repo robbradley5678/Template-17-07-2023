@@ -60,6 +60,13 @@ Edited by Rob Bradley <rob@nwdm.co.uk>
   max-width: 100vh;
   padding: 5%;
   object-fit: contain;
+  background-color: lightgrey;
+}
+
+@media (max-width: 650px) {
+  .lightbox-image {
+    padding: 0;
+  }
 }
 
 /*
@@ -69,14 +76,14 @@ Edited by Rob Bradley <rob@nwdm.co.uk>
 */
 
 .lightbox-btn {
-  width: 2em;
+  width: 1em;
   height: 2em;
   position: absolute;
   border-radius: 3px;
   border: none;
   box-shadow: none;
   transition: all 0.3s;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -92,7 +99,7 @@ Edited by Rob Bradley <rob@nwdm.co.uk>
 }
 
 .lightbox-btn-close {
-  top: -0.8em;
+  top: -2.5em;
   right: -0.8em;
   background-size: 40%;
   background-color:rgba(29, 29, 29, 0);
@@ -111,12 +118,12 @@ Edited by Rob Bradley <rob@nwdm.co.uk>
 }
 
 .lightbox-btn-previous {
-  left: 1.5em;
+  left: 0;
   transform: rotate(180deg);
 }
 
 .lightbox-btn-next {
-  right: 1.5em;
+  right: 0;
 }
 
 /*
