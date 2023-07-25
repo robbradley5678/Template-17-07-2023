@@ -36,7 +36,7 @@ FOOTER
 }
 
 * {
-    border: 1px dashed grey; /* Uncomment to see all element outlines */
+/* border: 0px dashed grey; /* Uncomment to see all element outlines */
    box-sizing: border-box;
 }
 
