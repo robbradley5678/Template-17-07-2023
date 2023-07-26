@@ -46,7 +46,7 @@
 
 .form-icon {
     display: block;
-    float: left;
+    float: left; /* To equalize width */
     margin-right: 10px;
     color: var(--accent-color-2);
     width: 20px;
