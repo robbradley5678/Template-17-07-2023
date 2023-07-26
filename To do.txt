@@ -18,9 +18,9 @@ Mobile services link (disable?), animate arrow rotating ✓
 Footer font sizes ✓
 Image alt tags ✓
 Comment code with company variables ✓
+Animations - multiple timing? ✓
 Parallax
-Animations - multiple timing? Check this - https://stackoverflow.com/questions/16888312/stack-css-transitions-using-multiple-classes-without-overriding
-Contact page icon alignment, especially on mobile
+
 Img scrset? Ask Chris
     
 
