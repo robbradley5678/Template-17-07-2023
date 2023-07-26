@@ -26,7 +26,7 @@
 
     <main>
  <!-- HERO -->
-    <section class="page-hero">
+    <section class="page-hero   hidden-until-scroll">
         <div class="hero-text">
             <h1>Reviews</h1>
         </div>
@@ -34,12 +34,12 @@
 
 <!-- MAIN CONTENT -->
         <section class="review-section">
-            <p>We take great pride in providing exceptional service, and these reviews reflect our commitment to our customers. Have a read of the genuine feedback shared by our satisfied customers</p>
+            <p class="hidden-until-scroll">We take great pride in providing exceptional service, and these reviews reflect our commitment to our customers. Have a read of the genuine feedback shared by our satisfied customers</p>
 
             <div class="review-grid">
             <!-- Column 1 -->
                 <div class="review-column">
-                    <div class="review-card">
+                    <div class="review-card     hidden-until-scroll">
                         <img src="./media/reviews/review-1.jpg" alt="Reviewer name">
                         <p class="review-card-text">
                             <i class="fa-solid fa-quote-left"></i>
@@ -52,7 +52,7 @@
                              <!-- Keep these short so they don't overflow on mobile-->
                         </div>
                     </div>
-                    <div class="review-card">
+                    <div class="review-card     hidden-until-scroll">
                         <img src="./media/reviews/review-2.jpg" alt="Reviewer name">
                         <p class="review-card-text">
                             <i class="fa-solid fa-quote-left"></i>
@@ -64,7 +64,7 @@
                             <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
                         </p>
                     </div>
-                    <div class="review-card">
+                    <div class="review-card     hidden-until-scroll">
                         <img src="./media/reviews/review-3.jpg" alt="Reviewer name">
                         <p class="review-card-text">
                             <i class="fa-solid fa-quote-left"></i>
@@ -80,7 +80,7 @@
 
             <!-- Column 2 -->
                 <div class="review-column">
-                    <div class="review-card">
+                    <div class="review-card     hidden-until-scroll">
                         <img src="./media/reviews/review-4.jpg" alt="Reviewer name">
                         <p class="review-card-text">
                             <i class="fa-solid fa-quote-left"></i>
@@ -92,7 +92,7 @@
                             <span class="location"><i class="fa-solid fa-location-dot"></i> Location</span>
                         </p>
                     </div>
-                    <div class="review-card">
+                    <div class="review-card     hidden-until-scroll">
                         <img src="./media/reviews/review-5.jpg" alt="Reviewer name">
                         <p class="review-card-text">
                             <i class="fa-solid fa-quote-left"></i>
@@ -112,8 +112,12 @@
         <section class="CTA">
             <h4>Get in touch</h4>
             <h2>Ready to work with us?</h2>
-            <a href="contact.html"><button class="hero-button-light">Contact us</button></a>
-            <a href="tel:0123456789" title="Tap to call us"><button class="hero-button-dark">0790 192 7777</button></a>   
+            <a href="contact.html" class="hidden-until-scroll">
+                <button class="hero-button-light">Contact us</button>
+            </a>
+            <a href="tel:0123456789" title="Tap to call us" class="hidden-until-scroll  delay-200ms">
+                <button class="hero-button-dark">0790 192 7777</button>
+            </a>   
     </section>
 </main>
     
@@ -123,6 +127,7 @@
 <!-- FOOTER -->
     <footer>
         <script src="./js/footer.js"></script>
+        <script src="./js/show-on-scroll.js"></script>
     </footer>
 
 <!-- SCRIPTS -->

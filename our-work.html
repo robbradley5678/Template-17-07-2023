@@ -28,7 +28,7 @@
 
     <main>
  <!-- HERO -->
-        <section class="page-hero">
+        <section class="page-hero   hidden-until-scroll">
             <div class="hero-text">
                 <h1>Our work</h1>
             </div>
@@ -36,55 +36,55 @@
         
 <!-- GALLERY -->
         <section>
-            <p>Whether you want some inspiration for your own project, or would just like to see the quality of our work, have a look at some of our latest installations below</p>
+            <p class="hidden-until-scroll">Whether you want some inspiration for your own project, or would just like to see the quality of our work, have a look at some of our latest installations below</p>
             
             <div class="gallery">   
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll">
                     <a href="media/gallery/001.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/001.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-100ms">
                     <a href="media/gallery/002.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/002.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-200ms">
                     <a href="media/gallery/003.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/003.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-300ms">
                     <a href="media/gallery/004.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/004.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-400ms">
                     <a href="media/gallery/005.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/005.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-500ms">
                     <a href="media/gallery/006.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/006.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-600ms">
                     <a href="media/gallery/007.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/007.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-700ms">
                     <a href="media/gallery/008.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/008.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-800ms">
                     <a href="media/gallery/009.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/009.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item    hidden-until-scroll     delay-900ms">
                     <a href="media/gallery/009.jpg" data-lightbox="gallery" data-image-alg="Image 1">
                         <img src="media/gallery/thumbs/009.jpg" alt="Gallery thumbmail" loading="lazy">
                     </a>
@@ -96,8 +96,12 @@
         <section class="CTA">
             <h4>Like what you see?</h4>
             <h2>Get a free quote</h2>
-            <a href="contact.html"><button class="hero-button-light">Contact us</button></a>
-            <a href="contact.html"><button class="hero-button-dark">0790 192 7777</button></a>                    
+            <a href="contact.html" class="hidden-until-scroll">
+                <button class="hero-button-light">Contact us</button>
+            </a>
+            <a href="contact.html" class="hidden-until-scroll     delay-200ms">
+                <button class="hero-button-dark">0790 192 7777</button>
+            </a>                    
         </section>
     </main>
 
@@ -108,5 +112,6 @@
 
 <!-- SCRIPTS -->
     <script src="./lightbox/lightbox.js"></script>
+    <script src="./js/show-on-scroll.js"></script>
 </body>
 </html>

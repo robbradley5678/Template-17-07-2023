@@ -800,13 +800,13 @@ a .footer-icon:hover {
 
 }
 
-/* ========================================================== JS CLASSES */
+/* ====================================== HIDDEN-UNTIL-SCROLL JS CLASSES */
 .hidden-until-scroll {
     opacity: 0;
-    transition: opacity 1s;
+    transition: 1s;
 }
 
-.show {
+.show-on-scroll {
     opacity: 1;
 }
 
@@ -814,14 +814,34 @@ a .footer-icon:hover {
     transition-delay: 200ms;
 }
 
+.delay-300ms{
+    transition-delay: 300ms;
+}
+
 .delay-400ms{
     transition-delay: 400ms;
+}
+
+.delay-500ms{
+    transition-delay: 500ms;
 }
 
 .delay-600ms{
     transition-delay: 600ms;
 }
 
+.delay-700ms{
+    transition-delay: 700ms;
+}
+
 .delay-800ms{
     transition-delay: 800ms;
+}
+
+.delay-900ms{
+    transition-delay: 900ms;
+}
+
+.delay-1000ms{
+    transition-delay: 1000ms;
 }

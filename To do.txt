@@ -19,7 +19,9 @@ Footer font sizes ✓
 Image alt tags ✓
 Comment code with company variables ✓
 Parallax
-Animations - multiple timing?
+Animations - multiple timing? Check this - https://stackoverflow.com/questions/16888312/stack-css-transitions-using-multiple-classes-without-overriding
+Contact page icon alignment, especially on mobile
+Img scrset? Ask Chris
     
 
 Other pages:
